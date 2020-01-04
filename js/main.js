@@ -274,7 +274,7 @@
 			var timeinterval = setInterval(updateClock, 1000);
 		}
 		// set your wedding date here
-		var deadline = 'August 22 2019 17:30:00 GMT+0200';
+		var deadline = 'August 22 2020 17:30:00 GMT+0200';
 		if (countdown){
 			initializeClock('timer', deadline);
 		}
