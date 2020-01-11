@@ -1,24 +1,6 @@
 ;(function () {
 	'use strict';
 
-	$.i18n({
-		locale: 'fr'
-	}).load({
-		en: 'i18n/en.json',
-		fr: 'i18n/fr.json'
-	});
-	console.log($.i18n( 'us-key' ));
-	
-	$.i18n.debug = true;
-
-	$(window).on('load', function() {
-		$('.loader').delay(600).fadeOut('slow');
-		setTimeout(function() {
-			$('.cover .display-tc').addClass('fadeInUp');
-		}, 800);
-		
-	});
-
 	// Form
 	var contactForm = function() {
 		(function ($, window, document, undefined) {
