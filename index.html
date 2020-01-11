@@ -701,7 +701,7 @@
 	<!-- Main -->
 	<script src="js/main.js"></script>
 	<script>
-		$( document ).ready( function ( $ ) {
+		$( document ).ready( function () {
 			$.i18n.debug = true;
 			$.i18n({
 				locale: 'fr'
@@ -709,7 +709,7 @@
 				en: 'i18n/en.json',
 				fr: 'i18n/fr.json'
 			});
-			console.log($.i18n("us-key"));
+			console.log($.i18n.locale);
 		});
 	</script>
 

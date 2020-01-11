@@ -1,6 +1,14 @@
 ;(function () {
 	'use strict';
 
+	$(window).on('load', function() {
+		$('.loader').delay(600).fadeOut('slow');
+		setTimeout(function() {
+			$('.cover .display-tc').addClass('fadeInUp');
+		}, 800);
+		
+	});
+
 	// Form
 	var contactForm = function() {
 		(function ($, window, document, undefined) {
