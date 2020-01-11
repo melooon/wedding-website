@@ -7,6 +7,9 @@
 		en: 'i18n/en.json',
 		fr: 'i18n/fr.json'
 	});
+	console.log($.i18n( 'us-key' ));
+	
+	$.i18n.debug = true;
 
 	$(window).on('load', function() {
 		$('.loader').delay(600).fadeOut('slow');
