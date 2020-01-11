@@ -1,7 +1,12 @@
 ;(function () {
 	'use strict';
 
-	
+	$.i18n({
+		locale: 'fr'
+	}).load({
+		en: 'i18n/en.json',
+		fr: 'i18n/fr.json'
+	});
 
 	$(window).on('load', function() {
 		$('.loader').delay(600).fadeOut('slow');
