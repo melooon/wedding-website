@@ -407,7 +407,7 @@
 		countdown();
 		filledLabels();
 		addGuest();
-		collapseEvents();
+		// collapseEvents();
 		singlePost();
 		isotope();
 		contactForm();
