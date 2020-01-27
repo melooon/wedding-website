@@ -9,6 +9,75 @@
 		
 	});
 
+	// Form 
+	var contactForm = function() { 
+		(function ($, window, document, undefined) { 
+		var $form = $('#contact-form'); 
+		$form.submit(function (e) { 
+			// remove the error class 
+			$('.form-group').removeClass('has-error'); 
+			$('.help-block').remove(); 
+			// get the form data 
+			var formData = { 
+				'name' : $('input[name="form-name"]').val(), 
+				'email' : $('input[name="form-email"]').val(), 
+				'attending': $('.switch-field input[type="radio"]:checked').attr('id'), 
+				'guest': $('#form-guest-name').val() 
+			}; 
+			// process the form 
+			$.ajax({ 
+				type : 'POST', 
+				url  : 'form.php', 
+				data : formData, 
+				dataType : 'json', 
+				encode : true 
+			}).done(function (data) { 
+				// handle errors 
+				if (!data.success) { 
+					if (data.errors.name) { 
+						$('#name-field').addClass('has-error'); 
+						$('#name-field').find('.col-sm-6').append('<span class="help-block">' + data.errors.name + '</span>'); 
+					} 
+					if (data.errors.email) { 
+						$('#email-field').addClass('has-error'); 
+						$('#email-field').find('.col-sm-6').append('<span class="help-block">' + data.errors.email + '</span>'); 
+					} 
+				} else { 
+					// display success message 
+					$form.html('<div class="message-success">' + data.message + '</div>'); 
+				} 
+			}).fail(function (data) { 
+				// for debug 
+				// console.log(data); 
+			}); 
+			e.preventDefault(); 
+		}); 
+	}(jQuery, window, document)); 
+	} 
+	
+	// Offcanvas 
+	var offcanvasMenu = function() { 
+		$('.main').prepend('<div id="offcanvas" />'); 
+		$('.main').prepend('<a href="#" class="js-nav-toggle nav-toggle nav-white"><i></i></a>'); 
+		var clone1 = $('.menu-1 > ul').clone(); 
+		$('#offcanvas').append(clone1); 
+		var clone2 = $('.menu-2 > ul').clone(); 
+		$('#offcanvas').append(clone2); 
+	
+		$('#offcanvas .has-dropdown').addClass('offcanvas-has-dropdown'); 
+		$('#offcanvas') 
+			.find('li') 
+			.removeClass('has-dropdown'); 
+	
+		$(window).on('resize', function() { 
+			if ( $('body').hasClass('offcanvas') ) { 
+				$('body').removeClass('offcanvas'); 
+				$('.js-nav-toggle').removeClass('active'); 
+			} 
+		}); 
+	}; 
+
+
 	// Page scroll
 	var pageScroll = function() {
 		$('body').on('click touch', '.page-scroll', function(event) {
