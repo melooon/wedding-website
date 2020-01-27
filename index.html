@@ -57,19 +57,19 @@
 					<div class="col-xs-10 menu-2">
 						<ul class="nav navbar-nav navbar-right">
 							<li class="active">
-								<a class="page-scroll" href="#header">Home</a>
+								<a class="page-scroll" data-i18n="nav.home" href="#header">Home</a>
 							</li>
 							<li>
-								<a class="page-scroll" href="#events">Events</a>
+								<a class="page-scroll" data-i18n="nav.events" href="#events">Events</a>
 							</li>
 							<li>
-								<a class="page-scroll" href="#couple-story">Story</a>
+								<a class="page-scroll" data-i18n="nav.story" href="#couple-story">Story</a>
 							</li>
 							<li>
-								<a class="page-scroll" href="#gallery">Gallery</a>
+								<a class="page-scroll" data-i18n="nav.gallery" href="#gallery">Gallery</a>
 							</li>
 							<li>
-								<a class="page-scroll" href="#invitation">Contact</a>
+								<a class="page-scroll" data-i18n="nav.contact" href="#invitation">Contact</a>
 							</li>
 							<li class="has-dropdown">
 								<a href="#">Pages</a>
@@ -130,7 +130,7 @@
 					<p class="heart text-center"><i class="icon-heart2"></i></p>
 					<div class="bride-wrap col-md-6">
 						<div class="bride">
-							<img src="img/bride.jpg" alt="groom" class="img-responsive">
+							<img src="img/krisz-01.png" alt="groom" class="img-responsive">
 						</div>
 						<div class="desc-bride">
 							<h3>Krisztina</h3>
@@ -686,31 +686,32 @@
 	<!-- Parallax -->
 	<script src="js/vendor/parallax.min.js"></script>
 	<!-- Magnific Popup -->
-	<script src="js/vendor/jquery.magnific-popup.min.js"></script>
-	<script src="js/vendor/magnific-popup-options.js"></script>
-	<script src="js/vendor/lightbox.min.js"></script>
-	<script src="js/vendor/isotope.pkgd.min.js"></script>
-	<script src="js/vendor/imagesloaded.pkgd.min.js"></script>
-	<script src="js/vendor/jquery.i18n.js"></script>
-	<script src="js/vendor/jquery.i18n.messagestore.js"></script>
-	<script src="js/vendor/jquery.i18n.fallbacks.js"></script>
-	<script src="js/vendor/jquery.i18n.language.js"></script>
-	<script src="js/vendor/jquery.i18n.parser.js"></script>
-	<script src="js/vendor/jquery.i18n.emitter.js"></script>
-	<script src="js/vendor/jquery.i18n.emitter.bidi.js"></script>
+	<script src="https://unpkg.com/i18next/i18next.js"></script>
+	<script src="https://unpkg.com/i18next-xhr-backend/i18nextXHRBackend.js"></script>
+	<script src="https://unpkg.com/i18next-browser-languagedetector/i18nextBrowserLanguageDetector.js"></script>
+	<script src="js/vendor/jquery-i18next.min.js"></script>
 	<!-- Main -->
 	<script src="js/main.js"></script>
 	<script>
-		$( document ).ready( function () {
-			$.i18n.debug = true;
-			$.i18n({
-				locale: 'fr'
-			}).load({
-				en: 'i18n/en.json',
-				fr: 'i18n/fr.json'
-			});
-			console.log($.i18n.locale);
-		});
+		i18next
+		.use(i18nextXHRBackend)
+		.use(i18nextBrowserLanguageDetector)
+		.init({
+			lng: 'fr',
+			fallbackLng: 'fr',
+			debug: true,
+			// ns: ['special', 'common'],
+			// defaultNS: 'special',
+			backend: {
+			// load from i18next-gitbook repo
+			loadPath: 'i18n/{{lng}}.json',
+			crossDomain: true
+			}
+		}, function(err, t) {
+        jqueryI18next.init(i18next, $);
+        $('.navbar').localize();
+        $('.content').localize();
+      });
 	</script>
 
 </body>

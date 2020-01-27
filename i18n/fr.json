@@ -1,4 +1,12 @@
 {
-    "title-key": "Mariage Krisz et Hugo",
-    "us-key": "Krisztina and Hugo"
+    "menu": {
+        "home": "home",
+        "gallery": "gallerie",
+        "events": "déroulement",
+        "contact": "contact"  
+    },
+    "content": {
+        "title-key": "Mariage Krisz et Hugo",
+        "us-key": "Krisztina and Hugo"
+    }
 }
