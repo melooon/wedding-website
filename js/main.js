@@ -323,14 +323,14 @@
 		}); 
 	} 
 	
-	var collapseEvents = function() {
-		$('#accordion').on('show.bs.collapse hide.bs.collapse', function (e) {
-			var elemId = $(e.target).attr('id') + '0';
+	// var collapseEvents = function() {
+	// 	$('#accordion').on('show.bs.collapse hide.bs.collapse', function (e) {
+	// 		var elemId = $(e.target).attr('id') + '0';
 
-			$('#accordion-img .collapse').collapse('hide');
-			$('#'+elemId).collapse('toggle');
-		});
-	}
+	// 		$('#accordion-img .collapse').collapse('hide');
+	// 		$('#'+elemId).collapse('toggle');
+	// 	});
+	// }
 
 	var singlePost = function() {
 		var hightLight = $('.post-hightlight');
