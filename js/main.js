@@ -290,6 +290,38 @@
 		});
 	}
 
+	function checkVal(inputField) { 
+		if (inputField.val() === '') { 
+			if (event.type === "focus") { 
+				inputField.prev('.control-label').addClass('filled') 
+			} else if (event.type === "blur") { 
+				inputField.prev('.control-label').removeClass('filled') 
+			} 
+		} 
+	} 
+ 
+	function addGuest() { 
+		var addBtn = $('.add-button'); 
+		var guestInput = $('#form-guest-name'); 
+		var guestList = $('.guest-list'); 
+ 
+		addBtn.on('click', function() { 
+			event.preventDefault();  
+			var guestVal = guestInput.val(); 
+			var appendString = '<div><input class="form-control" type="text" value="'+guestVal+'"/><a href="#" class="remove_field"><i class="fa fa-trash"></i></a></div>'; 
+			if (guestVal == '') { 
+				guestInput.focus(); 
+			} else { 
+				guestList.append(appendString); 
+				guestInput.val(''); 
+			} 
+		}); 
+ 
+		$('.guest-list').on('click', '.remove_field', function(e){ 
+			e.preventDefault(); 
+			$(this).parent('div').remove(); 
+		}); 
+	} 
 	
 	var collapseEvents = function() {
 		$('#accordion').on('show.bs.collapse hide.bs.collapse', function (e) {
