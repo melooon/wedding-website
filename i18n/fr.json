@@ -1,28 +1,29 @@
 {
-    "title-key": "Mariage Krisz et Hugo",
+    "title": "Mariage Krisz et Hugo",
     "navbar": {
         "home": "home",
-        "gallery": "gallerie",
+        "gallery": "galerie",
+        "story": "histoire",
         "events": "déroulement",
         "contact": "contact"  
     },
     "cover": {
         
-        "us-key": "Krisztina and Hugo",
-        "date-key": "22 Août 2020"
+        "us": "Krisztina et Hugo",
+        "date": "22 Août 2020"
     },
     "couple": {
-        "invite-key": "Nous vous invitons à célébrer notre mariage",
-        "groom-key": "",
-        "bride-key": ""
+        "invite": "Nous vous invitons à célébrer notre mariage",
+        "groom": "",
+        "bride": ""
     },
     "countdown": {
-        "d-key": "Le grand jour",
-        "celebration-key": "Nous sommes très heureux de pouvoir célébrer notre union avec nos proches",
-        "patience-key": "Patience",
-        "day-key": "jours",
-        "hour-key": "heures",
-        "second-key": "secondes",
-        "before-key": "avant de nous retrouver"
+        "d": "Le grand jour",
+        "celebration": "Nous sommes très heureux de pouvoir célébrer notre union avec nos proches",
+        "patience": "Patience",
+        "day": "jours",
+        "hour": "heures",
+        "second": "secondes",
+        "before": "avant de nous retrouver"
     }
 }
