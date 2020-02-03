@@ -72,7 +72,7 @@
 								<a class="page-scroll" data-i18n="navbar.contact" href="#invitation">Contact</a>
 							</li>
 							<li class="has-dropdown">
-								<a href="#" data-i18n="navbar.language">Pages</a>
+								<a href="#" data-i18n="navbar.language">Language</a>
 								<ul class="dropdown">
 									<li><a href="#" data-i18n="navbar.french" lang="fr">French</a></li>
 									<li><a href="#" data-i18n="navbar.english" lang="en">English</a></li>
@@ -591,8 +591,7 @@
 			crossDomain: true
 			}
 		}, function(err, t) {
-        jqueryI18next.init(i18next, $);
-			updateContent();
+        	updateContent();
 		});
 
 		i18next.on('languageChanged', () => {
@@ -600,6 +599,7 @@
 		});
 	  
 		function updateContent (){
+			jqueryI18next.init(i18next, $);
 			$('.navbar').localize();
        		$('.cover').localize();
 			$('.countdown').localize();

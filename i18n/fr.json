@@ -1,11 +1,14 @@
 {
     "title": "Mariage Krisz et Hugo",
     "navbar": {
-        "home": "accueil",
-        "gallery": "galerie",
-        "story": "histoire",
-        "events": "déroulement",
-        "contact": "contact"  
+        "home": "Accueil",
+        "gallery": "Galerie",
+        "story": "Histoire",
+        "events": "Déroulement",
+        "contact": "Contact",
+        "language": "langue",
+		"french": "Français",
+		"english": "Anglais"
     },
     "cover": {
         
