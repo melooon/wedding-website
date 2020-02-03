@@ -72,12 +72,12 @@
 								<a class="page-scroll" data-i18n="navbar.contact" href="#invitation">Contact</a>
 							</li>
 							<li class="has-dropdown">
-								<a href="#">Pages</a>
+								<a href="#" data-i18n="navbar.language">Pages</a>
 								<ul class="dropdown">
-									<li><a href="about.html">About us</a></li>
-									<li><a href="gallery.html">Gallery</a></li>
-									<li><a href="rsvp.html">RSVP</a></li>
-									<!-- <li><a href="gallery-single.html">Single Albom</a></li>
+									<li><a href="#" data-i18n="navbar.french" lang="fr">French</a></li>
+									<li><a href="#" data-i18n="navbar.english" lang="en">English</a></li>
+									<!-- <li><a href="rsvp.html">RSVP</a></li>
+									<li><a href="gallery-single.html">Single Albom</a></li>
 									<li><a href="blog.html">Blog page</a></li>
 									<li><a href="single-post.html">Post with aside</a></li>
 									<li><a href="single-post-2.html">Post without aside</a></li> -->
@@ -146,11 +146,10 @@
 			<div class="container">
 				<div class="row">
 					<div class="heading col-sm-12">
-						<h2 data-i18n="countdown.d">The big day<br>
-							22.August.2020
+						<h2 data-i18n="countdown.d">The big day
 						</h2>
-						<p data-i18n="countdown.celebration">We are so excited to celebrate our special day with our family and friends.
-						Thank you so much for visiting our wedding website!</p>
+						<p data-i18n="countdown.celebration">We are so excited to celebrate with our family and friends.
+						</p>
 					</div>
 					<div class="col-sm-12">
 						<div id="timer" class="timer text-center">
@@ -576,6 +575,7 @@
 	<!-- Main -->
 	<script src="js/main.js"></script>
 	<script>
+		
 		i18next
 		.use(i18nextXHRBackend)
 		.use(i18nextBrowserLanguageDetector)
@@ -592,10 +592,23 @@
 			}
 		}, function(err, t) {
         jqueryI18next.init(i18next, $);
-        $('.navbar').localize();
-        $('.cover').localize();
-		$('.countdown').localize();
-      });
+			updateContent();
+		});
+
+		i18next.on('languageChanged', () => {
+  			updateContent();
+		});
+	  
+		function updateContent (){
+			$('.navbar').localize();
+       		$('.cover').localize();
+			$('.countdown').localize();
+		};
+
+		$(".lang").click(function() {
+			lng = $(this).attr("lang");
+			i18next.changeLanguage(lng);
+		});
 	</script>
 
 </body>

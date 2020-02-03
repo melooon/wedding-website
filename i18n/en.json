@@ -1,4 +1,41 @@
 {
-	"title-key": "Krisz & hugo's wedding",
-	"us-key": "Krisztina and Hugo"
+    "title": "Krisz and Hugo's wedding",
+    "navbar": {
+        "home": "home",
+        "gallery": "gallery",
+        "story": "story",
+        "events": "events",
+		"contact": "contact",
+		"language": "language",
+		"french": "French",
+		"english": "English"
+    },
+    "cover": {
+        
+        "us": "Krisztina etand Hugo",
+        "date": "August 22nd 2020"
+    },
+    "couple": {
+        "invite": "",
+        "groom": "",
+        "bride": ""
+    },
+    "countdown": {
+        "d": "The big day",
+        "celebration": "We are so excited to celebrate with our family and friends",
+        "patience": "Just some hours...",
+        "day": "days",
+        "hour": "hours",
+        "second": "seconds",
+        "before": "...until we celebrate together!"
+	},
+	"story": {
+		"1": "",
+		"2": "",
+		"3": "",
+		"4": "",
+		"5": "",
+		"6": "",
+		"7": ""
+	}
 }
