@@ -30,12 +30,48 @@
         "before": "...until we celebrate together!"
 	},
 	"story": {
-		"1": "",
-		"2": "",
-		"3": "",
-		"4": "",
-		"5": "",
-		"6": "",
-		"7": ""
+		"love": "We Love Each Other",
+        "us": "Our Story",
+        "weirdos": "Hugo & Krisz are a couple of a different kind, THIS IS NOT A TRADITIONAL LOVE STORY, you've been warned",
+		"1": {
+			"title": "How we met",
+			"date": "October 7th, 2017",
+			"content": "They met in a library, when Hugo unexpectedly bumped into Krisz, causing her to drop all the books she was holding, and when they both went to pick them up, their eyes met, and it was love at first sight. True story, wallah."
+		},
+		"2": {
+			"title": "Second Date",
+			"date": "October 26th, 2017",
+			"content": "Of course we don't have a photo from our first date, so here's a photo from our second date, where we went to a questionable bar's Halloween party. Krisz went as a sexy witch and Hugo as Count Dracula."
+		},
+		"3": {
+			"title": "Moved into Etihad Towers",
+			"date": "November 10th, 2017",
+			"content": "Oh moving into Abu Dhabi's most iconic building was super awesome! We could watch the fog take over the city below us from the 36th floor."
+		},
+		"4": {
+			"title": "Our First Christmas Together",
+			"date": "December 25th, 2017",
+			"content": "We had a tiny Christmas with a ton of love and many many gifts."
+		},
+		"5": {
+			"title": "France Won The World Cup",
+			"date": "July 10th, 2018",
+			"content": "Unfortunately we couldn't be together on the day France held the world cup high, but we had the best time watching the semi finals together. It was an unforgetable day."
+		},
+		"6": {
+			"title": "Got Engaged",
+			"date": "April 7th, 2018",
+			"content": "Krisz knew she was going to marry Hugo, when he showed her her cupboard in the kitchen and said: You can keep your dégueulasse coffee and mustard here."
+		},
+		"7": {
+			"title": "Moved Out of Etihad Towers",
+			"date": "October 20th, 2018",
+			"content": "The sadest day of Hugo's life."
+		},
+		"8": {
+			"title": "Got Married",
+			"date": "November 4th 2019",
+			"content": "It was the one and only time that Hugo was late and Krisz was early."
+		}
 	}
 }

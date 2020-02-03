@@ -28,5 +28,50 @@
         "hour": "heures",
         "second": "secondes",
         "before": "avant de nous retrouver"
-    }
+    },
+    "story": {
+        "love": "Nous nous aimons",
+        "us": "Notre histoire",
+        "weirdos": "Hugo & Krisz sont un couple d'un autrer genre, CE N'EST PAS UNE HISTOIRE D'AMOUR CLASSIQUE, vous aurez été prévenus",
+        "1": {
+			"title": "Comment nous nous sommes rencontrés",
+			"date": "7 octobre 2017",
+			"content": "Ils se sont rencontrés dans une librairie, quand Hugo a malencontreusement heurté Krisz, faisant tomber tous ses livres. Alors qu'ils se pench`rent pour ramasser les livres, leurs regards se croisèrent et ce fut le coup de foudre. Histoire veridique, wallah."
+		},
+		"2": {
+			"title": "Deuxième rendez vous",
+			"date": "26 octobre 2017",
+			"content": "Evidemment nous n'avons pas de photos du premier rendez vous, alors en voici une une du second, où nous sommes allés dans un bar douteux fêter Halloween. Krisz était habillée en sorcière sexy et Hugo en Dracula."
+		},
+		"3": {
+			"title": "Emménagement à Etihad Towers",
+			"date": "27 Octobre 2017",
+			"content": "S'installer à Etihad towers fut une experience géniale! Nous pouvions admirer le brouillard saisir la ville du haut du 36ème étage"
+		},
+		"4": {
+			"title": "Notrer premier Noël ensemble",
+			"date": "25 décembre 2017",
+			"content": "Nous avons eu un petit Noël avec beaucoup d'amour et plein de cadeaux."
+		},
+		"5": {
+			"title": "La France gagne la coupe du monde",
+			"date": "10 juillet 2018",
+			"content": "Unfortunately we couldn't be together on the day France held the world cup high, but we had the best time watching the semi finals together. It was an unforgetable day."
+		},
+		"6": {
+			"title": "Fiancailles",
+			"date": "7 avril 2018",
+			"content": " Krisz a su qu'elle allait se marrier avec Hugo quand il lui a montré son placard dans la cuisine et dit \"Tu peux mettre ton café et ta moutarde dégueulasse ici\""
+		},
+		"7": {
+			"title": "Départ d'Etihad Towers",
+			"date": "20 octobre 2018",
+			"content": "Le jour le plus triste de la vie d'Hugo."
+		},
+		"8": {
+			"title": "Enfin mariés",
+			"date": "4 novembre 2019",
+			"content": "C'était la première et seule fois où Hugo était en retard et Krisz en avance."
+		}
+	}
 }
