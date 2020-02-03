@@ -606,6 +606,7 @@
 		};
 
 		$(".lang").click(function() {
+			console.log("change lang");
 			lng = $(this).attr("lang");
 			i18next.changeLanguage(lng);
 		});
