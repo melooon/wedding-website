@@ -73,5 +73,18 @@
 			"date": "4 novembre 2019",
 			"content": "C'était la première et seule fois où Hugo était en retard et Krisz en avance."
 		}
-	}
+	},
+	"events": {
+        "title": "Déroulement de la journée",
+        "details": "Des mises",
+		"date-1": "22 Août 2020",
+		"1": {
+			"title": "18:00 Vin d'honneur",
+			"details": "Nous avons déjà fait les démarches administratives, retrouvons nous directement autour d'un verre pour célébrer l'événement"
+		},
+		"2": {
+			"title": "20:00 Repas",
+			"details": "Passons à l'étage pour la suite des festivités"
+		}
+    }
 }

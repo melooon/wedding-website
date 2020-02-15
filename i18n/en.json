@@ -73,5 +73,18 @@
 			"date": "November 4th 2019",
 			"content": "It was the one and only time that Hugo was late and Krisz was early."
 		}
-	}
+	},
+	"events": {
+        "title": "Wedding Events",
+        "details": "More infos soon",
+		"date-1": "August 22nd, 2020",
+		"1": {
+			"title": "6:00pm Cocktail hour",
+			"details": "We got ride of formalities already, let directly celebrate over a drink"
+		},
+		"2": {
+			"title": "8:00pm Call to dinner",
+			"details": "Let's go upstairs to continue celebrating around a dinner"
+		}
+    }
 }
