@@ -54,14 +54,14 @@
 			"content": "Nous avons eu un petit Noël avec beaucoup d'amour et plein de cadeaux."
 		},
 		"5": {
-			"title": "La France gagne la coupe du monde",
-			"date": "10 juillet 2018",
-			"content": "Unfortunately we couldn't be together on the day France held the world cup high, but we had the best time watching the semi finals together. It was an unforgetable day."
-		},
-		"6": {
 			"title": "Fiancailles",
 			"date": "7 avril 2018",
-			"content": " Krisz a su qu'elle allait se marrier avec Hugo quand il lui a montré son placard dans la cuisine et dit \"Tu peux mettre ton café et ta moutarde dégueulasse ici\""
+			"content": " Krisz a su qu'elle allait se marier avec Hugo quand il lui a montré son placard dans la cuisine et dit \"Tu peux mettre ton café et ta moutarde dégueulasse ici\""
+        },
+        "6": {
+			"title": "La France gagne la coupe du monde",
+			"date": "10 juillet 2018",
+			"content": "Malheureusement, nous ne pouvions pas êtrer ensemble quand la France a soulevé la coupe du monde, mais nous avons eu beucoup de plaisir à regarder les demi finales. C'est un moment inoubliable."
 		},
 		"7": {
 			"title": "Départ d'Etihad Towers",
