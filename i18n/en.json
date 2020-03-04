@@ -75,15 +75,15 @@
 	},
 	"events": {
         "title": "Wedding Events",
-        "details": "More infos soon",
+        "details": "More details coming soon",
 		"date-1": "August 22nd, 2020",
 		"1": {
 			"title": "6:00pm Cocktail hour",
-			"details": "We got ride of formalities already, let directly celebrate over a drink"
+			"details": "In France we will not waste time being sober, let's drink and dance and maybe we can bribe the band to play us some English songs."
 		},
 		"2": {
 			"title": "8:00pm Call to dinner",
-			"details": "Let's go upstairs to continue celebrating around a dinner"
+			"details": "We'll go into a French Castle, sit on French chairs and Feast on French food, and of course there will be loads of Cheese!"
 		}
     }
 }
